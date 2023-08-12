@@ -5,22 +5,31 @@ public class Algo1{
     public static void main(String[] args) {
         int number;
         int sum = 0;
-    loop:
+        int previousSum = 0;
+        int newSum = 1;
+    
         do{
             System.out.print("Enter the number : ");
             number = scanner.nextInt();
             scanner.nextLine();
-            if (number < 0) continue loop;
+
             
-            
+        } while (number < 0);
 
+        for (int i = 0; i < number ; i ++){
+            sum = previousSum + newSum;
+            previousSum = newSum;
+            newSum = sum;
 
+            if ( sum == number){
+                System.out.println(sum);
+                break;
+            }else if (sum > number){
+                System.out.println(previousSum);
+                break;
+            }
 
-
-
-
-
-        } while (true);
+        }
     }
     
 }
