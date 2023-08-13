@@ -10,10 +10,10 @@ public class Algo5 {
 
         } while (input.isBlank());
         char[] chars = input.toCharArray();
-    loop:
+    
         for(int i = 0; i < chars.length; i++){
             char c = chars[i];
-            //if(c == ' ') continue loop;
+            
             
             if (c >= 0 && c <= 255){
                 
