@@ -21,7 +21,7 @@ public class Algo10 {
             }
             char[] chars = input.toCharArray();
             if (chars[0] == '+' && chars[1] == '9' && chars[2] == '4' && chars[3] == ' '){
-                if(chars.length < 15) {
+                if(chars.length != 14) {
                     System.out.println("Invalid number...");
                     continue loop;
                 }
@@ -35,7 +35,7 @@ public class Algo10 {
                 }
             }
             if (chars [0] == '0'){
-                if (chars.length < 12){
+                if (chars.length != 11){
                     System.out.println("Invalid number...");
                     continue loop;
                 }
