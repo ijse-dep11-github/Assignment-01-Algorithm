@@ -15,7 +15,7 @@ public class Algo5 {
             char c = chars[i];
             //if(c == ' ') continue loop;
             
-            if (c >= 0 || c <= 255){
+            if (c >= 0 && c <= 255){
                 
                 for (int j = 0; j < chars.length / 2; j++){
                     char count = chars[j];
@@ -29,7 +29,7 @@ public class Algo5 {
         }
         for(int i = 0; i < chars.length; i++){
             System.out.print(chars[i]);
-            System.out.println();
+           // System.out.println();
 
         }
         
